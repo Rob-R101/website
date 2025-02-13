@@ -3,10 +3,9 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   color: #333;
-  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
   margin: 0;
   padding: 0;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Dark Mode */
@@ -24,110 +23,43 @@ body {
   background-color: #222 !important;
 }
 
-/* Navbar */
-.navbar {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(45deg, #007bff, #00bcd4);
+  color: white;
 }
 
-.navbar-brand i {
-  margin-right: 8px;
+.hero h1 {
+  font-size: 2.8rem;
 }
 
-.navbar-nav .nav-item {
-  margin: 0 10px;
+.hero p {
+  font-size: 1.4rem;
 }
 
-.navbar-nav .nav-link {
-  font-weight: bold;
-}
-
-/* Grid Layout for Projects */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* Flexbox Layout */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
-  max-width: 900px;
-  margin: auto;
   padding: 20px;
 }
 
-.project {
+/* Cards */
+.card {
   background: white;
-  padding: 15px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.project:hover {
+.card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.dark-mode .project {
-  background: #333;
-  color: white;
-}
-
-/* Header */
-header {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  font-size: 1.5rem;
-}
-
-/* Navigation */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 10px 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Section Styling */
-section {
-  margin: 50px auto;
-  max-width: 900px;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.dark-mode section {
-  background: #222;
-  color: white;
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-footer a {
-  color: #00bcd4;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
