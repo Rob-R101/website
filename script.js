@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     console.error("Error: #footer-container not found in HTML.");
   }
+
   // Load Navbar
   fetch("navbar.html")
     .then(response => response.text())
@@ -23,15 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("navbar-container").innerHTML = data;
     })
     .catch(error => console.error("Error loading navbar:", error));
-  // Load Codewars Data
 
-    fetch("https://www.codewars.com/api/v1/users/Rob-R101")
+  // Load Codewars Data
+  fetch("https://www.codewars.com/api/v1/users/Rob-R101")
     .then(response => response.json())
     .then(data => {
       document.getElementById("codewars-rank").innerHTML = `Current Rank: ${data.ranks.overall.name}`;
     })
     .catch(error => console.error("Error fetching Codewars data:", error));
-});
 
   // Dark Mode Toggle
   setTimeout(() => {
