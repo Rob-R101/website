@@ -1,36 +1,38 @@
-// Load Navbar First
+// Load Navbar & Footer
 document.addEventListener("DOMContentLoaded", function () {
+  // Load Navbar
   fetch("navbar.html")
     .then(response => response.text())
     .then(data => {
       document.getElementById("navbar-container").innerHTML = data;
-
-      // After loading navbar, initialize dark mode toggle
-      initializeDarkMode();
-    })
-    .catch(error => console.error("Error loading navbar:", error));
-});
-
-// Dark Mode Function
-function initializeDarkMode() {
-  const darkModeToggle = document.getElementById("dark-mode-toggle");
-
-  // If dark mode was enabled before, apply it
-  if (localStorage.getItem("dark-mode") === "enabled") {
-    document.body.classList.add("dark-mode");
-  }
-
-  // Add event listener if the button exists
-  if (darkModeToggle) {
-    darkModeToggle.addEventListener("click", function () {
-      document.body.classList.toggle("dark-mode");
-
-      // Store dark mode preference
-      if (document.body.classList.contains("dark-mode")) {
-        localStorage.setItem("dark-mode", "enabled");
-      } else {
-        localStorage.setItem("dark-mode", "disabled");
-      }
     });
-  }
-}
+
+  // Load Footer
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer-container").innerHTML = data;
+    });
+
+  // Dark Mode Toggle
+  setTimeout(() => {
+    const darkModeToggle = document.getElementById("dark-mode-toggle");
+
+    if (localStorage.getItem("dark-mode") === "enabled") {
+      document.body.classList.add("dark-mode");
+    }
+
+    // Ensure dark mode toggle button exists before adding event listener
+    if (darkModeToggle) {
+      darkModeToggle.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+          localStorage.setItem("dark-mode", "enabled");
+        } else {
+          localStorage.setItem("dark-mode", "disabled");
+        }
+      });
+    }
+  }, 500);
+});
