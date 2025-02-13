@@ -1,5 +1,13 @@
 // Load Navbar & Footer
 document.addEventListener("DOMContentLoaded", function () {
+   // Load Footer
+   fetch("footer.html")
+   .then(response => response.text())
+   .then(data => {
+     document.getElementById("footer-container").innerHTML = data;
+   })
+   .catch(error => console.error("Error loading footer:", error));
+
   // Load Navbar
   fetch("navbar.html")
     .then(response => response.text())
@@ -7,14 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("navbar-container").innerHTML = data;
     })
     .catch(error => console.error("Error loading navbar:", error));
-
-  // Load Footer
-  fetch("footer.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("footer-container").innerHTML = data;
-    })
-    .catch(error => console.error("Error loading footer:", error));
 
   // Dark Mode Toggle
   setTimeout(() => {
