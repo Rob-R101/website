@@ -1,19 +1,27 @@
+// Load Navbar
 document.addEventListener("DOMContentLoaded", function () {
-  const darkModeToggle = document.getElementById("dark-mode-toggle");
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-container").innerHTML = data;
+    });
 
-  // Check localStorage for dark mode setting
-  if (localStorage.getItem("dark-mode") === "enabled") {
-    document.body.classList.add("bg-dark", "text-light");
-  }
+  // Dark Mode Toggle
+  setTimeout(() => {
+    const darkModeToggle = document.getElementById("dark-mode-toggle");
 
-  darkModeToggle.addEventListener("click", function () {
-    document.body.classList.toggle("bg-dark");
-    document.body.classList.toggle("text-light");
-
-    if (document.body.classList.contains("bg-dark")) {
-      localStorage.setItem("dark-mode", "enabled");
-    } else {
-      localStorage.setItem("dark-mode", "disabled");
+    if (localStorage.getItem("dark-mode") === "enabled") {
+      document.body.classList.add("dark-mode");
     }
-  });
+
+    darkModeToggle.addEventListener("click", function () {
+      document.body.classList.toggle("dark-mode");
+
+      if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("dark-mode", "enabled");
+      } else {
+        localStorage.setItem("dark-mode", "disabled");
+      }
+    });
+  }, 500);
 });
