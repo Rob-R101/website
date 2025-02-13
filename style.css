@@ -1,20 +1,87 @@
+/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
+  color: #333;
   text-align: center;
   margin: 0;
   padding: 0;
+  transition: background-color 0.3s, color 0.3s;
 }
 
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .project {
+  background: #333;
+  color: white;
+}
+
+.dark-mode .navbar {
+  background-color: #222 !important;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand i {
+  margin-right: 8px;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+}
+
+/* Grid Layout for Projects */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.project {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .project {
+  background: #333;
+  color: white;
+}
+
+/* Header */
 header {
   background-color: #333;
   color: white;
   padding: 20px;
+  font-size: 1.5rem;
 }
 
+/* Navigation */
 nav ul {
   list-style-type: none;
   padding: 0;
+  margin: 10px 0;
 }
 
 nav ul li {
@@ -28,22 +95,22 @@ nav a {
   font-weight: bold;
 }
 
+/* Section Styling */
 section {
   margin: 50px auto;
-  max-width: 800px;
+  max-width: 900px;
   background: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.project {
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin: 15px 0;
-  border-radius: 5px;
+.dark-mode section {
+  background: #222;
+  color: white;
 }
 
+/* Footer */
 footer {
   background-color: #333;
   color: white;
@@ -51,4 +118,16 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
