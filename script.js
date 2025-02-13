@@ -5,14 +5,16 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(response => response.text())
     .then(data => {
       document.getElementById("navbar-container").innerHTML = data;
-    });
+    })
+    .catch(error => console.error("Error loading navbar:", error));
 
   // Load Footer
   fetch("footer.html")
     .then(response => response.text())
     .then(data => {
       document.getElementById("footer-container").innerHTML = data;
-    });
+    })
+    .catch(error => console.error("Error loading footer:", error));
 
   // Dark Mode Toggle
   setTimeout(() => {
@@ -22,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.classList.add("dark-mode");
     }
 
-    // Ensure dark mode toggle button exists before adding event listener
     if (darkModeToggle) {
       darkModeToggle.addEventListener("click", function () {
         document.body.classList.toggle("dark-mode");
