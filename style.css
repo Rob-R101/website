@@ -74,20 +74,25 @@ html, body {
   border-radius: 8px;
   text-align: center;
   transition: box-shadow 0.3s ease-in-out;
-  max-width: 300px;
-  min-height: 250px;
+  max-width: 300px; /* Prevents boxes from being too large */
+  min-height: 250px; /* Ensures uniform height */
   padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between; /* Keeps elements evenly spaced */
+  overflow: hidden;
 }
 
 .certification-box img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  object-fit: contain;
+  max-width: 100%; /* Ensures image fits inside the box */
+  max-height: 150px; /* Prevents image from being too large */
+  height: auto; /* Maintains aspect ratio */
+  width: auto; /* Prevents distortion */
+  border-radius: 5px; /* Optional: adds smooth corners */
+  object-fit: contain; /* Ensures it stays within the boundaries */
 }
+
 
 
 .certification-box:hover {
