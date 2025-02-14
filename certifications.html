@@ -1,46 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certifications</title>
+    <title>Certifications - Robert Roffey</title>
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Inline Styles (For Debugging to Ensure Proper Display) -->
+    <style>
+        body {
+            background-color: lightgray;
+        }
+
+        /* Certification Box for Image Styling */
+        .certification-box img {
+            max-width: 100%;
+            max-height: 150px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* Certification Card Styling */
+        .certification-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+            overflow: hidden;
+        }
+
+        .certification-card:hover {
+            transform: scale(1.05);
+        }
+
+        .certification-card img {
+            max-height: 180px; /* Controls image height */
+            object-fit: contain; /* Ensures the image is not distorted */
+            padding: 10px;
+            width: 100%;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <style>
-    body {
-      background-color: lightgray;
-    }
-    .certification-box img {
-      max-width: 100%;
-      max-height: 150px;
-      height: auto;
-      object-fit: contain;
-    }
-  </style>
-  <div class="container mt-5">
-      <h2 class="text-center mb-4">Achieved Certifications</h2>
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Achieved Certifications</h2>
 
-      <div class="d-flex flex-wrap justify-content-center gap-4">
-          <div class="certification-box col-md-3 p-3">
-              <img src="images/Le Wagon Web Dev Bootcamp Certificate of Completion.png" alt="Web Development Bootcamp Certificate">
-              <h4>Web Development Bootcamp</h4>
-              <p>Issued by: Le Wagon</p>
-          </div>
-          <div class="certification-box col-md-3 p-3">
-              <h4>More self-learn Coding Certificates to follow...</h4>
-          </div>
-          <div class="certification-box col-md-3 p-3">
-              <h4>More self-learn Coding Certificates to follow...</h4>
-          </div>
-          <div class="certification-box col-md-3 p-3">
-              <h4>More self-learn Coding Certificates to follow...</h4>
-          </div>
-      </div>
-  </div>
+    <div class="d-flex flex-wrap justify-content-center gap-4">
+        <div class="certification-box col-md-3 p-3">
+            <img src="images/Le Wagon Web Dev Bootcamp Certificate of Completion.png" alt="Web Development Bootcamp Certificate">
+            <h4>Web Development Bootcamp</h4>
+            <p>Issued by: Le Wagon</p>
+        </div>
+        <div class="certification-box col-md-3 p-3">
+            <h4>More self-learn Coding Certificates to follow...</h4>
+        </div>
+        <div class="certification-box col-md-3 p-3">
+            <h4>More self-learn Coding Certificates to follow...</h4>
+        </div>
+        <div class="certification-box col-md-3 p-3">
+            <h4>More self-learn Coding Certificates to follow...</h4>
+        </div>
+    </div>
+</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
