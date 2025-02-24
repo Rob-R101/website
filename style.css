@@ -1,25 +1,14 @@
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
   background: #f4f4f9;
   color: #333;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-
-a {
-  text-decoration: none;
-  color: #007bff;
-}
-
-a:hover {
-  color: #0056b3;
 }
 
 /* Navbar Styles */
@@ -64,10 +53,13 @@ a:hover {
 
 .hero-content h1 {
   font-size: 3em;
+
+  color: #fff;
 }
 
 .hero-content p {
   font-size: 1.2em;
+  color: #fff;
 }
 
 .hero-buttons a {
@@ -126,11 +118,16 @@ a:hover {
 @media (max-width: 768px) {
   .navbar-links {
       display: none;
+      flex-direction: column;
+  }
+
+  .navbar-toggle {
+      display: block;
+      cursor: pointer;
   }
 
   .navbar-links.active {
       display: flex;
-      flex-direction: column;
   }
 
   .hero {
