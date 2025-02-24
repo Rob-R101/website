@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
       .then(data => {
           document.getElementById('navbar-container').innerHTML = data;
 
-          // Now that the navbar is loaded, activate the toggle for mobile view
+          // Activate the toggle for mobile view
           const navbarToggle = document.querySelector('.navbar-toggle');
           const navbarLinks = document.querySelector('.navbar-links');
 
@@ -23,14 +23,4 @@ document.addEventListener("DOMContentLoaded", function() {
       .then(data => {
           document.getElementById('footer-container').innerHTML = data;
       });
-});
-
-// Smooth Scrolling (Only once, applied to all anchor links)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
-  });
 });
