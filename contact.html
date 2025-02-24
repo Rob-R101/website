@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome - Robert Roffey</title>
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Robert Roffey</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<h1> CONTACT INFO TO BE DISPLAYED HERE</h1>
+<body>
+
+    <!-- Load Navbar -->
+    <div id="navbar-container"></div>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h1><i class="fa-solid fa-envelope"></i> Contact Me</h1>
+        <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Load Footer -->
+    <div id="footer-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

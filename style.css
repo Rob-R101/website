@@ -1,119 +1,126 @@
-/* Global Styles */
-html, body {
-  height: 100%;
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background: #f4f4f9;
   color: #333;
-  transition: background-color 0.3s, color 0.3s;
 }
 
-/* Ensures content pushes footer to the bottom */
-.main-content {
-  flex: 1;
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
+.navbar a {
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin: 0 10px;
+}
 
 /* Hero Section */
 .hero {
+  background: linear-gradient(135deg, #1e90ff, #00bfff);
+  color: #fff;
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(45deg, #007bff, #00bcd4);
-  color: white;
-}
-
-.hero h1 {
-  font-size: 2.8rem;
-}
-
-.hero p {
-  font-size: 1.4rem;
-}
-
-/* Flexbox Layout for Main Sections */
-.flex-container {
+  padding: 50px 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-/* Cards */
-
-.card-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 300px;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Boxes for certification */
-.certification-box {
-  background: #f8f8f8;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  text-align: center;
-  transition: box-shadow 0.3s ease-in-out;
-  max-width: 300px; /* Prevents boxes from being too large */
-  min-height: 250px; /* Ensures uniform height */
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* Keeps elements evenly spaced */
-  overflow: hidden;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.certification-box img {
-  max-width: 100%; /* Ensures image fits inside the box */
-  max-height: 150px; /* Prevents image from being too large */
-  height: auto; /* Maintains aspect ratio */
-  width: auto; /* Prevents distortion */
-  border-radius: 5px; /* Optional: adds smooth corners */
-  object-fit: contain; /* Ensures it stays within the boundaries */
+.hero-content {
+  max-width: 600px;
+  margin-right: 20px;
 }
 
-
-
-.certification-box:hover {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+.hero-content h1 {
+  font-size: 2.5em;
 }
 
-/* Footer - Stays at Bottom */
+.hero-content p {
+  font-size: 1.2em;
+}
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary,
+.hero-buttons .btn-dark {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 25px;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+.btn-secondary {
+  background: #28a745;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #218838;
+}
+
+.btn-dark {
+  background: #343a40;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background: #23272b;
+}
+
+/* Footer */
 .footer {
-  background-color: #222;
-  color: white;
+  background: #222;
+  color: #ccc;
   text-align: center;
-  padding: 15px 0;
-  width: 100%;
+  padding: 20px;
 }
 
 .footer a {
-  color: #00bcd4;
-  text-decoration: none;
-  font-weight: bold;
+  color: #007bff;
 }
 
 .footer a:hover {
-  text-decoration: underline;
+  color: #0056b3;
 }
