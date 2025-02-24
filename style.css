@@ -1,140 +1,21 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Custom Styles */
+.hero img {
+  border: 5px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f9;
-  color: #333;
-}
-
-/* Navbar Styles */
-.navbar {
-  background: #222;
-  color: #fff;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-.navbar a {
-  color: #fff;
-  padding: 10px;
-}
-
-.navbar-links {
-  list-style: none;
-  display: flex;
-}
-
-.navbar-links li {
-  margin: 0 10px;
-}
-
-/* Hero Section */
-.hero {
-  background: linear-gradient(135deg, #1e90ff, #00bfff);
-  color: #fff;
-  text-align: center;
-  padding: 80px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.hero-content h1 {
-  font-size: 3em;
-
-  color: #fff;
-}
-
-.hero-content p {
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
   font-size: 1.2em;
-  color: #fff;
-}
-
-.hero-buttons a {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 25px;
-  font-size: 1em;
-  transition: background 0.3s;
-}
-
-.btn-primary {
-  background: #007bff;
-  color: #fff;
-}
-
-.btn-primary:hover {
-  background: #0056b3;
-}
-
-.btn-secondary {
-  background: #28a745;
-  color: #fff;
-}
-
-.btn-secondary:hover {
-  background: #218838;
-}
-
-.btn-dark {
-  background: #343a40;
-  color: #fff;
-}
-
-.btn-dark:hover {
-  background: #23272b;
-}
-
-/* Footer Styles */
-.footer {
-  background: #222;
-  color: #ccc;
-  text-align: center;
-  padding: 20px;
+  line-height: 1.6;
 }
 
 .footer a {
-  color: #007bff;
+  color: #ccc;
+  transition: color 0.3s;
 }
 
 .footer a:hover {
-  color: #0056b3;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navbar-links {
-      display: none;
-      flex-direction: column;
-  }
-
-  .navbar-toggle {
-      display: block;
-      cursor: pointer;
-  }
-
-  .navbar-links.active {
-      display: flex;
-  }
-
-  .hero {
-      flex-direction: column;
-  }
-
-  .hero-content {
-      text-align: center;
-  }
+  color: #fff;
 }
