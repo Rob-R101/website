@@ -1,21 +1,119 @@
-/* Custom Styles */
-.hero img {
-  border: 5px solid #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* Global Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.about p {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.2em;
-  line-height: 1.6;
+/* Ensures content pushes footer to the bottom */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(45deg, #007bff, #00bcd4);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+}
+
+/* Flexbox Layout for Main Sections */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Cards */
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Boxes for certification */
+.certification-box {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  transition: box-shadow 0.3s ease-in-out;
+  max-width: 300px; /* Prevents boxes from being too large */
+  min-height: 250px; /* Ensures uniform height */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Keeps elements evenly spaced */
+  overflow: hidden;
+}
+
+.certification-box img {
+  max-width: 100%; /* Ensures image fits inside the box */
+  max-height: 150px; /* Prevents image from being too large */
+  height: auto; /* Maintains aspect ratio */
+  width: auto; /* Prevents distortion */
+  border-radius: 5px; /* Optional: adds smooth corners */
+  object-fit: contain; /* Ensures it stays within the boundaries */
+}
+
+
+
+.certification-box:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer - Stays at Bottom */
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
 }
 
 .footer a {
-  color: #ccc;
-  transition: color 0.3s;
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .footer a:hover {
-  color: #fff;
+  text-decoration: underline;
 }
