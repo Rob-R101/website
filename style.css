@@ -286,6 +286,7 @@ h2 {
 .marquee-container {
   overflow: hidden;
   white-space: nowrap;
+  width: 100%;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -294,8 +295,8 @@ h2 {
 
 .marquee-text {
   display: inline-block;
-  animation: marquee 10s linear infinite;
-  color: #ccc;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite, colorChange 5s linear infinite;
   font-size: 0.9em;
 }
 
@@ -305,5 +306,18 @@ h2 {
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+/* Color Change Animation */
+@keyframes colorChange {
+  0% {
+    color: red;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: green;
   }
 }
