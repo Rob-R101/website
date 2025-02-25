@@ -23,35 +23,74 @@
   <main class="main-content">
 
     <!-- Hero Section -->
-    <section class="hero text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 80vh; background: linear-gradient(135deg, #1e90ff, #00bfff); color: white;">
+    <section class="hero text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 70vh; background: linear-gradient(135deg, #1e1e2f, #32324d); color: white;">
       <div class="container">
-        <h1 class="display-3 fw-bold">Hi, I'm Robert Roffey</h1>
-        <p class="lead mb-4">Software Developer | Problem Solver | Tech Enthusiast</p>
+        <h1 class="display-3 fw-bold text-white">Hi, I'm Robert Roffey</h1>
+        <p class="lead text-muted">Software Developer | Problem Solver | Tech Enthusiast</p>
         <div class="profile-image mb-4">
-          <img src="images/ME.jpeg" class="rounded-circle shadow-lg" alt="Robert Roffey" style="width: 200px; border: 5px solid white;">
-        </div>
-        <div class="cta-buttons">
-          <a href="projects.html" class="btn btn-primary btn-lg mx-2 animate__animated animate__bounceIn">
-            <i class="fa-solid fa-code"></i> View My Projects
-          </a>
-          <a href="achievements.html" class="btn btn-success btn-lg mx-2 animate__animated animate__bounceIn animate__delay-1s">
-            <i class="fa-solid fa-trophy"></i> See My Achievements
-          </a>
-          <a href="contact.html" class="btn btn-dark btn-lg mx-2 animate__animated animate__bounceIn animate__delay-2s">
-            <i class="fa-solid fa-envelope"></i> Contact Me
-          </a>
+          <img src="images/ME.jpeg" class="rounded-circle shadow-lg" alt="Robert Roffey" style="width: 180px; border: 5px solid #4a4a6a;">
         </div>
       </div>
     </section>
 
-    <!-- About Me Section -->
-    <section class="about py-5 bg-light text-center">
+    <!-- Clickable Sections -->
+    <section class="clickable-sections py-4">
       <div class="container">
-        <h2 class="mb-4">About Me</h2>
-        <p class="lead">
-          I am a passionate software developer specializing in full-stack development.
-          I enjoy solving complex problems and working on innovative projects.
-        </p>
+        <div class="row text-center">
+
+          <!-- About Me -->
+          <div class="col-md-3 mb-4">
+            <a href="about.html" class="text-decoration-none">
+              <div class="card card-hover text-white bg-dark shadow">
+                <div class="card-body">
+                  <i class="fa-solid fa-user fa-3x mb-3"></i>
+                  <h5 class="card-title">About Me</h5>
+                  <p class="card-text">Get to know who I am.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Projects -->
+          <div class="col-md-3 mb-4">
+            <a href="projects.html" class="text-decoration-none">
+              <div class="card card-hover text-white bg-dark shadow">
+                <div class="card-body">
+                  <i class="fa-solid fa-code fa-3x mb-3"></i>
+                  <h5 class="card-title">Projects</h5>
+                  <p class="card-text">Check out my work.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Achievements -->
+          <div class="col-md-3 mb-4">
+            <a href="achievements.html" class="text-decoration-none">
+              <div class="card card-hover text-white bg-dark shadow">
+                <div class="card-body">
+                  <i class="fa-solid fa-trophy fa-3x mb-3"></i>
+                  <h5 class="card-title">Achievements</h5>
+                  <p class="card-text">See what I've accomplished.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-md-3 mb-4">
+            <a href="contact.html" class="text-decoration-none">
+              <div class="card card-hover text-white bg-dark shadow">
+                <div class="card-body">
+                  <i class="fa-solid fa-envelope fa-3x mb-3"></i>
+                  <h5 class="card-title">Contact Me</h5>
+                  <p class="card-text">Let's get in touch.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
       </div>
     </section>
 

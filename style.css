@@ -30,7 +30,7 @@ html, body {
 
 .hero h1 {
   font-size: 2.8rem;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
@@ -39,6 +39,14 @@ html, body {
 
 .hero .cta-buttons a:hover {
   transform: translateY(-5px);
+}
+
+.hero .profile-image img {
+  transition: transform 0.3s ease;
+}
+
+.hero .profile-image img:hover {
+  transform: scale(1.1);
 }
 
 /* Flexbox Layout for Main Sections */
@@ -81,6 +89,17 @@ html, body {
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Clickable Cards */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Boxes for certification */
