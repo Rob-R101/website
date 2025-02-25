@@ -23,8 +23,9 @@ html, body {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: linear-gradient(135deg, #1e1e2f, #32324d); /* Updated Gradient for Consistency */
+  background: linear-gradient(135deg, #1e1e2f, #32324d); /* Consistent Gradient */
   color: white;
+  min-height: 60vh;
 }
 
 .hero h1 {
@@ -91,29 +92,65 @@ html, body {
   color: #333;
 }
 
-/* Card Link */
-.card-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.card-hover {
+/* Clickable Sections */
+.clickable-sections .card {
+  background: #1e1e2f;
+  color: white;
+  border: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 10px;
-  padding: 15px;
 }
 
-.card-hover:hover {
+.clickable-sections .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-.card-hover img {
+.clickable-sections .card .card-title {
+  color: white;
+}
+
+.clickable-sections .card p {
+  color: #ccc;
+}
+
+/* Consistent Project Cards */
+.project-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  min-height: 250px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h4 {
+  color: #333;
+}
+
+.project-card img {
+  max-height: 80px;
+  margin-bottom: 15px;
   transition: transform 0.3s ease;
 }
 
-.card-hover img:hover {
+.project-card img:hover {
   transform: scale(1.05);
+}
+
+.project-card a {
+  margin: 5px;
+  transition: transform 0.3s ease;
+}
+
+.project-card a:hover {
+  transform: translateY(-3px);
 }
 
 /* Certification Box */
@@ -153,24 +190,6 @@ h1, h2 {
 h2 {
   border-bottom: 2px solid #007bff;
   padding-bottom: 5px;
-}
-
-/* About Section */
-.about {
-  background: #f4f4f9;
-  color: #333;
-  padding: 50px 20px;
-}
-
-.about h2 {
-  font-weight: 700;
-}
-
-.about p {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.2em;
-  line-height: 1.6;
 }
 
 /* Footer - Stays at Bottom */
