@@ -23,7 +23,7 @@
   <main class="main-content">
 
     <!-- Hero Section -->
-    <section class="hero text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 60vh; background: linear-gradient(135deg, #1e1e2f, #32324d); color: white; padding: 20px 0;">
+    <section class="hero text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 60vh;">
       <div class="container">
         <h1 class="display-4 fw-bold text-white mb-3">Hi, I'm Robert Roffey</h1>
         <p class="lead text-muted" style="font-size: 1.1em;">Software Developer | Problem Solver | Tech Enthusiast</p>
@@ -36,60 +36,46 @@
     <!-- Clickable Sections -->
     <section class="clickable-sections pb-4">
       <div class="container">
-        <div class="row text-center justify-content-center">
-
+        <div class="project-cards-container">
           <!-- About Me -->
-          <div class="col-6 col-md-3 mb-3">
-            <a href="about.html" class="text-decoration-none">
-              <div class="card card-hover text-white bg-dark shadow-sm">
-                <div class="card-body">
-                  <i class="fa-solid fa-user fa-2x mb-2"></i>
-                  <h6 class="card-title mb-1">About Me</h6>
-                  <p class="small">Get to know who I am.</p>
-                </div>
-              </div>
+          <div class="project-card">
+            <i class="fa-solid fa-user fa-3x mb-3 text-info"></i>
+            <h4>About Me</h4>
+            <p>Get to know who I am.</p>
+            <a href="about.html" class="btn btn-dark btn-sm">
+              <i class="fa-solid fa-arrow-right"></i> Learn More
             </a>
           </div>
 
           <!-- Projects -->
-          <div class="col-6 col-md-3 mb-3">
-            <a href="projects.html" class="text-decoration-none">
-              <div class="card card-hover text-white bg-dark shadow-sm">
-                <div class="card-body">
-                  <i class="fa-solid fa-code fa-2x mb-2"></i>
-                  <h6 class="card-title mb-1">Projects</h6>
-                  <p class="small">Check out my work.</p>
-                </div>
-              </div>
+          <div class="project-card">
+            <i class="fa-solid fa-code fa-3x mb-3 text-primary"></i>
+            <h4>Projects</h4>
+            <p>Check out my work.</p>
+            <a href="projects.html" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-code"></i> View Projects
             </a>
           </div>
 
           <!-- Achievements -->
-          <div class="col-6 col-md-3 mb-3">
-            <a href="achievements.html" class="text-decoration-none">
-              <div class="card card-hover text-white bg-dark shadow-sm">
-                <div class="card-body">
-                  <i class="fa-solid fa-trophy fa-2x mb-2"></i>
-                  <h6 class="card-title mb-1">Achievements</h6>
-                  <p class="small">See what I've accomplished.</p>
-                </div>
-              </div>
+          <div class="project-card">
+            <i class="fa-solid fa-trophy fa-3x mb-3 text-warning"></i>
+            <h4>Achievements</h4>
+            <p>See what I've accomplished.</p>
+            <a href="achievements.html" class="btn btn-success btn-sm">
+              <i class="fa-solid fa-trophy"></i> View Achievements
             </a>
           </div>
 
           <!-- Contact -->
-          <div class="col-6 col-md-3 mb-3">
-            <a href="contact.html" class="text-decoration-none">
-              <div class="card card-hover text-white bg-dark shadow-sm">
-                <div class="card-body">
-                  <i class="fa-solid fa-envelope fa-2x mb-2"></i>
-                  <h6 class="card-title mb-1">Contact Me</h6>
-                  <p class="small">Let's get in touch.</p>
-                </div>
-              </div>
+          <div class="project-card">
+            <i class="fa-solid fa-envelope fa-3x mb-3 text-light"></i>
+            <h4>Contact Me</h4>
+            <p>Let's get in touch.</p>
+            <a href="contact.html" class="btn btn-dark btn-sm">
+              <i class="fa-solid fa-envelope"></i> Contact Me
             </a>
           </div>
-
         </div>
       </div>
     </section>
