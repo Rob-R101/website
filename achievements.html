@@ -23,7 +23,7 @@
   <main class="main-content">
 
     <!-- Hero Section -->
-    <section class="hero text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 60vh;">
+    <section class="hero text-center d-flex flex-column align-items-center justify-content-center" style="height: 40vh;">
       <div class="container">
         <h1 class="display-4 fw-bold text-white mb-3">My Achievements</h1>
         <p class="text-white" style="font-size: 1.1em;">Celebrate what I've accomplished and the journey so far.</p>
@@ -31,12 +31,12 @@
     </section>
 
     <!-- Achievements Section -->
-    <section class="container py-5">
-      <div class="row justify-content-center">
+    <section class="container-fluid d-flex justify-content-center align-items-center" style="flex: 1;">
+      <div class="row justify-content-center" style="overflow-y: auto; max-height: 50vh;">
         <!-- CodeWars Stats -->
-        <div class="col-12 col-md-4 mb-4">
-          <div class="project-card text-white shadow-sm text-center">
-            <div class="card-body">
+        <div class="col-12 col-md-3 mb-4">
+          <div class="project-card text-white shadow-sm text-center" style="height: 100%;">
+            <div class="card-body d-flex flex-column justify-content-between">
               <h3 class="card-title"><i class="fa-solid fa-code"></i> CodeWars Stats</h3>
               <img src="https://www.codewars.com/users/Rob-R101/badges/large"
                    alt="Codewars Badge" class="img-fluid mb-2">
@@ -48,9 +48,9 @@
         </div>
 
         <!-- GitHub Stats -->
-        <div class="col-12 col-md-4 mb-4">
-          <div class="project-card text-white shadow-sm text-center">
-            <div class="card-body">
+        <div class="col-12 col-md-3 mb-4">
+          <div class="project-card text-white shadow-sm text-center" style="height: 100%;">
+            <div class="card-body d-flex flex-column justify-content-between">
               <h3 class="card-title"><i class="fa-brands fa-github"></i> GitHub Stats</h3>
               <img src="https://github-readme-stats.vercel.app/api?username=Rob-R101&show_icons=true&theme=tokyonight"
                    alt="GitHub Stats" class="img-fluid mb-2">
@@ -62,9 +62,9 @@
         </div>
 
         <!-- Codecademy Progress -->
-        <div class="col-12 col-md-4 mb-4">
-          <div class="project-card text-white shadow-sm text-center">
-            <div class="card-body">
+        <div class="col-12 col-md-3 mb-4">
+          <div class="project-card text-white shadow-sm text-center" style="height: 100%;">
+            <div class="card-body d-flex flex-column justify-content-between">
               <h3 class="card-title"><i class="fa-solid fa-c"></i> Codecademy Progress</h3>
               <img src="images/Codecademy stats.png"
                    alt="Codecademy current progress" class="img-fluid mb-2">
@@ -76,9 +76,9 @@
         </div>
 
         <!-- Certifications Link -->
-        <div class="col-12 col-md-4 mb-4">
-          <div class="project-card text-white shadow-sm text-center">
-            <div class="card-body">
+        <div class="col-12 col-md-3 mb-4">
+          <div class="project-card text-white shadow-sm text-center" style="height: 100%;">
+            <div class="card-body d-flex flex-column justify-content-between">
               <h3 class="card-title"><i class="fa-solid fa-book-open"></i> Certifications</h3>
               <p>Details of certifications obtained.</p>
               <a href="certifications.html" class="btn btn-primary">

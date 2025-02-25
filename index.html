@@ -14,16 +14,16 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
   <!-- Load Navbar -->
   <div id="navbar-container"></div>
 
   <!-- Main Content Wrapper -->
-  <main class="main-content">
+  <main class="flex-grow-1 d-flex flex-column">
 
     <!-- Hero Section -->
-    <section class="hero text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 60vh;">
+    <section class="hero flex-grow-1 d-flex flex-column align-items-center justify-content-center text-center">
       <div class="container">
         <h1 class="display-4 fw-bold text-white mb-3">Hi, I'm Robert Roffey</h1>
         <p class="text-white" style="font-size: 1.1em;">Software Developer | Problem Solver | Tech Enthusiast</p>
@@ -34,55 +34,53 @@
     </section>
 
     <!-- Clickable Sections -->
-    <section class="clickable-sections pb-4">
-      <div class="container">
-        <div class="row justify-content-center">
-          <!-- About Me -->
-          <div class="col-6 col-md-3 mb-3">
-            <div class="project-card">
-              <i class="fa-solid fa-user fa-3x mb-3 text-info"></i>
-              <h4>About Me</h4>
-              <p>Get to know who I am.</p>
-              <a href="about.html" class="btn btn-dark btn-sm">
-                <i class="fa-solid fa-arrow-right"></i> Learn More
-              </a>
-            </div>
+    <section class="clickable-sections flex-grow-1 container d-flex justify-content-center align-items-center">
+      <div class="row justify-content-center w-100">
+        <!-- About Me -->
+        <div class="col-6 col-md-3 mb-3 d-flex justify-content-center">
+          <div class="project-card text-center">
+            <i class="fa-solid fa-user fa-3x mb-3 text-info"></i>
+            <h4>About Me</h4>
+            <p>Get to know who I am.</p>
+            <a href="about.html" class="btn btn-dark btn-sm">
+              <i class="fa-solid fa-arrow-right"></i> Learn More
+            </a>
           </div>
+        </div>
 
-          <!-- Projects -->
-          <div class="col-6 col-md-3 mb-3">
-            <div class="project-card">
-              <i class="fa-solid fa-code fa-3x mb-3 text-primary"></i>
-              <h4>Projects</h4>
-              <p>Check out my work.</p>
-              <a href="projects.html" class="btn btn-primary btn-sm">
-                <i class="fa-solid fa-code"></i> View Projects
-              </a>
-            </div>
+        <!-- Projects -->
+        <div class="col-6 col-md-3 mb-3 d-flex justify-content-center">
+          <div class="project-card text-center">
+            <i class="fa-solid fa-code fa-3x mb-3 text-primary"></i>
+            <h4>Projects</h4>
+            <p>Check out my work.</p>
+            <a href="projects.html" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-code"></i> View Projects
+            </a>
           </div>
+        </div>
 
-          <!-- Achievements -->
-          <div class="col-6 col-md-3 mb-3">
-            <div class="project-card">
-              <i class="fa-solid fa-trophy fa-3x mb-3 text-warning"></i>
-              <h4>Achievements</h4>
-              <p>See what I've accomplished.</p>
-              <a href="achievements.html" class="btn btn-success btn-sm">
-                <i class="fa-solid fa-trophy"></i> View Achievements
-              </a>
-            </div>
+        <!-- Achievements -->
+        <div class="col-6 col-md-3 mb-3 d-flex justify-content-center">
+          <div class="project-card text-center">
+            <i class="fa-solid fa-trophy fa-3x mb-3 text-warning"></i>
+            <h4>Achievements</h4>
+            <p>See what I've accomplished.</p>
+            <a href="achievements.html" class="btn btn-success btn-sm">
+              <i class="fa-solid fa-trophy"></i> View Achievements
+            </a>
           </div>
+        </div>
 
-          <!-- Contact -->
-          <div class="col-6 col-md-3 mb-3">
-            <div class="project-card">
-              <i class="fa-solid fa-envelope fa-3x mb-3 text-light"></i>
-              <h4>Contact Me</h4>
-              <p>Let's get in touch.</p>
-              <a href="contact.html" class="btn btn-dark btn-sm">
-                <i class="fa-solid fa-envelope"></i> Contact Me
-              </a>
-            </div>
+        <!-- Contact -->
+        <div class="col-6 col-md-3 mb-3 d-flex justify-content-center">
+          <div class="project-card text-center">
+            <i class="fa-solid fa-envelope fa-3x mb-3 text-light"></i>
+            <h4>Contact Me</h4>
+            <p>Let's get in touch.</p>
+            <a href="contact.html" class="btn btn-dark btn-sm">
+              <i class="fa-solid fa-envelope"></i> Contact Me
+            </a>
           </div>
         </div>
       </div>
@@ -90,8 +88,12 @@
 
   </main> <!-- End of Main Content -->
 
-  <!-- Load Footer -->
-  <div id="footer-container"></div>
+  <!-- Footer -->
+  <footer class="footer mt-auto py-3 bg-dark text-white text-center">
+    <div class="container">
+      <span>© 2025 Robert Roffey | All Rights Reserved</span>
+    </div>
+  </footer>
 
   <!-- Bootstrap JS -->
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
