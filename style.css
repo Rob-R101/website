@@ -281,3 +281,29 @@ h2 {
 .btn-dark:hover {
   background: #23272b;
 }
+
+/* Marquee Scrolling Text */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marquee-text {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+  color: #ccc;
+  font-size: 0.9em;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
