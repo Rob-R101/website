@@ -30,10 +30,15 @@ html, body {
 
 .hero h1 {
   font-size: 2.8rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hero p {
   font-size: 1.4rem;
+}
+
+.hero .cta-buttons a:hover {
+  transform: translateY(-5px);
 }
 
 /* Flexbox Layout for Main Sections */
@@ -43,6 +48,17 @@ html, body {
   justify-content: center;
   gap: 20px;
   padding: 20px;
+}
+
+/* Profile Image */
+.profile-image img {
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.profile-image img:hover {
+  transform: scale(1.05);
 }
 
 /* Cards */
@@ -97,6 +113,23 @@ html, body {
 
 .certification-box:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section */
+.about {
+  background: #f4f4f9;
+  color: #333;
+}
+
+.about h2 {
+  font-weight: 700;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  line-height: 1.6;
 }
 
 /* Footer - Stays at Bottom */

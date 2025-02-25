@@ -20,33 +20,42 @@
   <div id="navbar-container"></div>
 
   <!-- Main Content Wrapper -->
-  <div class="main-content">
+  <main class="main-content">
 
     <!-- Hero Section -->
-    <header class="hero text-center">
-      <h1>Hi, I'm Robert Roffey</h1>
-      <p>Software Developer | Problem Solver | Tech Enthusiast</p>
-      <div class="container mb-3">
-        <img src="images/ME.jpeg" alt="Robert Roffey">
-      </div>
-
-      <div class="cta-buttons">
-        <a href="projects.html" class="btn btn-primary btn-lg"><i class="fa-solid fa-code"></i> View My Projects</a>
-        <a href="achievements.html" class="btn btn-success btn-lg"><i class="fa-solid fa-trophy"></i> See My Achievements</a>
-        <a href="contact.html" class="btn btn-dark btn-lg"><i class="fa-solid fa-envelope"></i> Contact Me</a>
-      </div>
-    </header>
-
-  <!-- About Me Section -->
-    <section class="container about d-flex flex-column align-items-center justify-content-start" style="min-height: 200px;">
-      <div class="text-center">
-        <h2>About Me</h2>
-        <p>I am a passionate software developer specializing in full-stack development. I enjoy solving complex problems and working on innovative projects.</p>
+    <section class="hero text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 80vh; background: linear-gradient(135deg, #1e90ff, #00bfff); color: white;">
+      <div class="container">
+        <h1 class="display-3 fw-bold">Hi, I'm Robert Roffey</h1>
+        <p class="lead mb-4">Software Developer | Problem Solver | Tech Enthusiast</p>
+        <div class="profile-image mb-4">
+          <img src="images/ME.jpeg" class="rounded-circle shadow-lg" alt="Robert Roffey" style="width: 200px; border: 5px solid white;">
+        </div>
+        <div class="cta-buttons">
+          <a href="projects.html" class="btn btn-primary btn-lg mx-2 animate__animated animate__bounceIn">
+            <i class="fa-solid fa-code"></i> View My Projects
+          </a>
+          <a href="achievements.html" class="btn btn-success btn-lg mx-2 animate__animated animate__bounceIn animate__delay-1s">
+            <i class="fa-solid fa-trophy"></i> See My Achievements
+          </a>
+          <a href="contact.html" class="btn btn-dark btn-lg mx-2 animate__animated animate__bounceIn animate__delay-2s">
+            <i class="fa-solid fa-envelope"></i> Contact Me
+          </a>
+        </div>
       </div>
     </section>
 
+    <!-- About Me Section -->
+    <section class="about py-5 bg-light text-center">
+      <div class="container">
+        <h2 class="mb-4">About Me</h2>
+        <p class="lead">
+          I am a passionate software developer specializing in full-stack development.
+          I enjoy solving complex problems and working on innovative projects.
+        </p>
+      </div>
+    </section>
 
-  </div> <!-- End of Main Content -->
+  </main> <!-- End of Main Content -->
 
   <!-- Load Footer -->
   <div id="footer-container"></div>
@@ -56,6 +65,5 @@
 
   <!-- Custom JS -->
   <script defer src="script.js"></script>
-
 </body>
 </html>
