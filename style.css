@@ -121,7 +121,7 @@ html, body {
   font-size: 0.9em;
 }
 
-/* Consistent Project Cards - Project Page */
+/* Consistent Project Cards */
 .project-card {
   background: #1e1e2f;
   color: white;
@@ -141,15 +141,17 @@ html, body {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-.project-card h4 {
-  color: #ccc;
-  font-size: 1.5em;
+.project-card h4,
+.project-card h3 {
+  color: #fff;
+  font-size: 1.4em;
 }
 
 .project-card img {
-  max-height: 80px;
+  max-height: 150px;
   margin-bottom: 15px;
   transition: transform 0.3s ease;
+  border-radius: 5px;
 }
 
 .project-card img:hover {
@@ -185,34 +187,6 @@ html, body {
   font-size: 1.5em;
   font-weight: bold;
   color: white;
-}
-
-/* Certification Box */
-.certification-box {
-  background: #f8f8f8;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  text-align: center;
-  transition: box-shadow 0.3s ease-in-out;
-  max-width: 300px;
-  min-height: 250px;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-}
-
-.certification-box img {
-  max-width: 100%;
-  max-height: 150px;
-  border-radius: 5px;
-  object-fit: contain;
-}
-
-.certification-box:hover {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Section Headings */
@@ -286,17 +260,17 @@ h2 {
 .marquee-container {
   overflow: hidden;
   white-space: nowrap;
-  width: calc(100% - 400px); /* Adjusted to fit between brand and links */
+  width: calc(100% - 400px);
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: -15px; /* Starts after the brand */
-  right: 500px; /* Ends before the navigation links */
+  left: 0;
+  right: 0;
   top: 0;
   height: 100%;
-  pointer-events: none; /* Allow clicks on nav links */
+  pointer-events: none;
   z-index: 1;
 }
 
@@ -304,13 +278,12 @@ h2 {
   display: inline-block;
   padding-left: 100%;
   animation: marquee 10s linear infinite, colorChange 3s linear infinite;
-  font-size: 1.1em; /* Increased font size */
+  font-size: 1.1em;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-/* Scrolling Animation */
 @keyframes marquee {
   0% {
     transform: translateX(100%);
@@ -320,7 +293,6 @@ h2 {
   }
 }
 
-/* Colour Animation */
 @keyframes colorChange {
   0% {
     color: red;
@@ -341,11 +313,7 @@ h2 {
   position: relative;
 }
 
-.navbar-brand {
-  z-index: 2;
-  pointer-events: auto;
-}
-
+.navbar-brand,
 .navbar-nav {
   z-index: 2;
   pointer-events: auto;

@@ -20,48 +20,77 @@
   <div id="navbar-container"></div>
 
   <!-- Main Content Wrapper -->
-  <div class="main-content">
-    <section class="container">
-      <h1><i class="fa-solid fa-trophy"></i> My Achievements</h1>
+  <main class="main-content">
 
-      <div class="flex-container">
-        <div class="card">
-          <h3><i class="fa-solid fa-code"></i> CodeWars Stats</h3>
-          <img src="https://www.codewars.com/users/Rob-R101/badges/large"
-               alt="Codewars Badge" class="img-fluid">
-          <a href="https://www.codewars.com/users/Rob-R101" target="_blank" class="btn btn-danger mt-2">
-              <i class="fa-solid fa-code"></i> View Profile
-          </a>
-        </div>
-
-
-        <div class="card">
-          <h3><i class="fa-brands fa-github"></i> GitHub Stats</h3>
-          <img src="https://github-readme-stats.vercel.app/api?username=Rob-R101&show_icons=true&theme=tokyonight"
-               alt="GitHub Stats" class="img-fluid">
-          <a href="https://github.com/Rob-R101" target="_blank" class="btn btn-dark mt-2">
-              <i class="fa-brands fa-github"></i> View Profile
-          </a>
-      </div>
-
-      <div class="card">
-        <h3><i class="fa-solid fa-c"></i> Codecademy Progress</h3>
-        <img src="images/Codecademy stats.png"
-             alt="Codecademy current progress" class="img-fluid">
-        <a href="https://www.codecademy.com/" target="_blank" class="btn btn-danger mt-2">
-            <i class="fa-solid fa-code"></i> Goto Codecademy
-        </a>
-      </div>
-
-        <a href="certifications.html" class="card-link">
-          <div class="card">
-            <h3><i class="fa-solid fa-book-open"></i> Certifications</h3>
-            <p>Details of certifications obtained.</p>
-          </div>
-        </a>
+    <!-- Hero Section -->
+    <section class="hero text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 60vh;">
+      <div class="container">
+        <h1 class="display-4 fw-bold text-white mb-3">My Achievements</h1>
+        <p class="text-white" style="font-size: 1.1em;">Celebrate what I've accomplished and the journey so far.</p>
       </div>
     </section>
-  </div> <!-- End of Main Content -->
+
+    <!-- Achievements Section -->
+    <section class="container py-5">
+      <div class="row justify-content-center">
+        <!-- CodeWars Stats -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="project-card text-white shadow-sm text-center">
+            <div class="card-body">
+              <h3 class="card-title"><i class="fa-solid fa-code"></i> CodeWars Stats</h3>
+              <img src="https://www.codewars.com/users/Rob-R101/badges/large"
+                   alt="Codewars Badge" class="img-fluid mb-2">
+              <a href="https://www.codewars.com/users/Rob-R101" target="_blank" class="btn btn-danger mt-2">
+                  <i class="fa-solid fa-code"></i> View Profile
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub Stats -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="project-card text-white shadow-sm text-center">
+            <div class="card-body">
+              <h3 class="card-title"><i class="fa-brands fa-github"></i> GitHub Stats</h3>
+              <img src="https://github-readme-stats.vercel.app/api?username=Rob-R101&show_icons=true&theme=tokyonight"
+                   alt="GitHub Stats" class="img-fluid mb-2">
+              <a href="https://github.com/Rob-R101" target="_blank" class="btn btn-dark mt-2">
+                  <i class="fa-brands fa-github"></i> View Profile
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Codecademy Progress -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="project-card text-white shadow-sm text-center">
+            <div class="card-body">
+              <h3 class="card-title"><i class="fa-solid fa-c"></i> Codecademy Progress</h3>
+              <img src="images/Codecademy stats.png"
+                   alt="Codecademy current progress" class="img-fluid mb-2">
+              <a href="https://www.codecademy.com/" target="_blank" class="btn btn-danger mt-2">
+                  <i class="fa-solid fa-code"></i> Goto Codecademy
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications Link -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="project-card text-white shadow-sm text-center">
+            <div class="card-body">
+              <h3 class="card-title"><i class="fa-solid fa-book-open"></i> Certifications</h3>
+              <p>Details of certifications obtained.</p>
+              <a href="certifications.html" class="btn btn-primary">
+                <i class="fa-solid fa-arrow-right"></i> View Certifications
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main> <!-- End of Main Content -->
 
   <!-- Load Footer -->
   <div id="footer-container"></div>
