@@ -20,15 +20,21 @@
   <div id="navbar-container"></div>
 
   <!-- Main Content Wrapper -->
-  <main class="main-content py-5" style="background: #f4f4f9;">
-    <section class="container">
-      <h1 class="text-center mb-4"><i class="fa-solid fa-code"></i> My Projects</h1>
+  <main class="main-content">
+    <!-- Hero Section with Gradient Background -->
+    <section class="hero text-center d-flex flex-column align-items-center justify-content-center"
+      style="min-height: 60vh; background: linear-gradient(135deg, #1e1e2f, #32324d); color: white; padding: 20px 0;">
+      <h1 class="display-4">My Projects</h1>
+      <p class="lead">Explore my work and what I've accomplished.</p>
+    </section>
 
+    <!-- Projects Section -->
+    <section class="container py-5">
       <div class="row justify-content-center">
         <!-- Project 1: Controller Critic -->
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm h-100 border-0 card-hover">
-            <div class="card-body text-center">
+        <div class="col-md-5 mb-4">
+          <div class="card shadow-sm h-100 border-0 card-hover text-center">
+            <div class="card-body">
               <i class="fa-solid fa-gamepad fa-3x mb-3 text-primary"></i>
               <h4 class="card-title">Controller Critic</h4>
               <p class="card-text">A game controller review and recommendation app.</p>
@@ -43,11 +49,11 @@
         </div>
 
         <!-- Project 2: Rent-a-Mentor -->
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm h-100 border-0 card-hover">
-            <div class="card-body text-center">
-              <img src="images/logo-2.png" alt="Rent a Mentor logo" class="img-fluid mb-3" style="width: 60px;">
-              <h4 class="card-title">Rent-a-Mentor</h4>
+        <div class="col-md-5 mb-4">
+          <div class="card shadow-sm h-100 border-0 card-hover text-center">
+            <div class="card-body">
+              <img src="images/logo-2.png" alt="Rent a Mentor logo" class="img-fluid mb-3" style="max-height: 80px;">
+              <h4 class="card-title text-success">Rent-a-Mentor</h4>
               <p class="card-text">A platform connecting students with qualified tutors for personalized learning.</p>
               <a href="https://github.com/Rob-R101/rent_a_mentor" target="_blank" class="btn btn-primary btn-sm">
                 <i class="fa-brands fa-github"></i> View on GitHub
