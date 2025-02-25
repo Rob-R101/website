@@ -19,13 +19,17 @@ html, body {
   justify-content: space-between;
 }
 
-/* Hero Section */
+/* Hero Section - Consistent Gradient */
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: linear-gradient(135deg, #1e1e2f, #32324d); /* Consistent Gradient */
+  background: linear-gradient(135deg, #1e1e2f, #32324d);
   color: white;
   min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero h1 {
@@ -70,48 +74,76 @@ html, body {
   padding: 20px;
 }
 
-/* Clickable Sections */
-.clickable-sections .card {
+/* Clickable Sections - Index Page */
+.clickable-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.clickable-sections .project-card {
   background: #1e1e2f;
   color: white;
   border: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 10px;
-  min-height: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 250px;
+  min-height: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.clickable-sections .card:hover {
+.clickable-sections .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-.clickable-sections .card .card-title {
+.clickable-sections .project-card i {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.clickable-sections .project-card h4 {
+  font-size: 1.2em;
   color: white;
 }
 
-.clickable-sections .card p {
+.clickable-sections .project-card p {
   color: #ccc;
+  font-size: 0.9em;
 }
 
-/* Consistent Project Cards */
+/* Consistent Project Cards - Project Page */
 .project-card {
   background: #1e1e2f;
   color: white;
+  border: none;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 20px;
-  min-height: 300px;
+  width: 100%;
+  max-width: 350px;
+  min-height: 250px;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 .project-card h4 {
-  color: #fff;
+  color: #ccc;
+  font-size: 1.5em;
 }
 
 .project-card img {
