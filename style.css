@@ -103,6 +103,14 @@ html, body {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
+.card-hover img {
+  transition: transform 0.3s ease;
+}
+
+.card-hover img:hover {
+  transform: scale(1.05);
+}
+
 /* Boxes for certification */
 .certification-box {
   background: #f8f8f8;
