@@ -150,7 +150,8 @@ html, body {
 }
 
 .project-card img:hover {
-  transform: scale(1.05);
+  transform: scale(1.75);
+  z-index: 10;
 }
 
 .project-card a {
@@ -301,4 +302,12 @@ html, body {
 .navbar-nav {
   z-index: 2;
   pointer-events: auto;
+}
+
+.icon-codecademy {
+  width: 48px;         /* Adjust size to match other icons */
+  height: 48px;
+  margin-right: 8px;   /* Space between icon and text */
+  vertical-align: middle;
+  filter: invert(1);   /* Makes the icon white */
 }

@@ -25,8 +25,8 @@ exports.handler = async (event) => {
     port: 587,
     secure: false,
     auth: {
-      user: 'contact@robertroffey.uk', // Your Namecheap Private Email
-      pass: 'ArthurWilliamGeorge!', // Your Namecheap Email Password
+      user: 'contact@robertroffey.uk',
+      pass: 'ArthurWilliamGeorge!',
     },
   });
 
