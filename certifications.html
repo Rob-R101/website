@@ -13,104 +13,62 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Inline Styles for Debugging -->
-    <style>
-        /* Full Page Layout Fix */
-        html, body {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .main-content {
-            flex: 1; /* Pushes footer to the bottom */
-        }
-
-        /* Certification Card Styling */
-        .certification-card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s ease-in-out;
-            overflow: hidden;
-            text-align: center;
-            background: white;
-        }
-
-        .certification-card:hover {
-            transform: scale(1.05);
-        }
-
-        .certification-card img {
-            max-height: 180px; /* Ensures image fits inside the card */
-            object-fit: contain;
-            padding: 10px;
-            width: 100%;
-        }
-
-        .card-body {
-            text-align: center;
-        }
-    </style>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
     <!-- Load Navbar -->
     <div id="navbar-container"></div>
 
     <!-- Main Content Wrapper -->
-    <div class="main-content">
-        <div class="container mt-5">
-            <h1 class="text-center"><i class="fa-solid fa-book-open"></i> Achieved Certifications</h1>
+    <main class="flex-grow-1 d-flex flex-column">
+        <!-- Hero Section with Consistent Gradient Background -->
+        <section class="hero text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 40vh; max-height: 40vh;">
+            <h1 class="display-4 text-white"><i class="fa-solid fa-book-open"></i> Achieved Certifications</h1>
+        </section>
 
-            <div class="row mt-4">
+        <!-- Certifications Section -->
+        <section class="container d-flex justify-content-center align-items-center flex-grow-1">
+            <div class="row justify-content-center w-100">
                 <!-- Certification 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card certification-card">
-                        <img src="images/Le Wagon Web Dev Bootcamp Certificate of Completion.png" class="card-img-top" alt="Web Development Bootcamp Certificate">
-                        <div class="card-body">
-                            <h4 class="card-title">Web Development Bootcamp</h4>
-                            <p class="card-text">Issued by: Le Wagon</p>
-                        </div>
+                <div class="col-6 col-md-3 mb-3 d-flex justify-content-center">
+                    <div class="project-card text-dark shadow-sm text-center">
+                        <img src="images/Le Wagon Web Dev Bootcamp Certificate of Completion.png" class="img-fluid mb-2" alt="Web Development Bootcamp Certificate">
+                        <h4 class="card-title">Web Development Bootcamp</h4>
+                        <p class="small">Issued by: Le Wagon</p>
                     </div>
                 </div>
 
-                <!-- Placeholder Certificates -->
-                <div class="col-md-4 mb-4">
-                    <div class="card certification-card">
-                        <div class="card-body">
-                            <h4 class="card-title">Self-learn Coding Certificates to follow...</h4>
-                        </div>
+                <!-- Placeholder Certificates
+                <div class="col-6 col-md-3 mb-3 d-flex justify-content-center">
+                    <div class="project-card text-dark shadow-sm text-center">
+                        <h4 class="card-title">Self-learn Coding Certificates to follow...</h4>
                     </div>
                 </div>
 
-                <div class="col-md-4 mb-4">
-                    <div class="card certification-card">
-                        <div class="card-body">
-                            <h4 class="card-title">Self-learn Coding Certificates to follow...</h4>
-                        </div>
+                <div class="col-6 col-md-3 mb-3 d-flex justify-content-center">
+                    <div class="project-card text-dark shadow-sm text-center">
+                        <h4 class="card-title">Self-learn Coding Certificates to follow...</h4>
                     </div>
                 </div>
 
-                <div class="col-md-4 mb-4">
-                    <div class="card certification-card">
-                        <div class="card-body">
-                            <h4 class="card-title">Self-learn Coding Certificates to follow...</h4>
-                        </div>
+                <div class="col-6 col-md-3 mb-3 d-flex justify-content-center">
+                    <div class="project-card text-dark shadow-sm text-center">
+                        <h4 class="card-title">Self-learn Coding Certificates to follow...</h4>
                     </div>
-                </div>
+                </div> -->
             </div>
-        </div>
-    </div>
+        </section>
+    </main> <!-- End of Main Content -->
 
-    <!-- Sticky Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        © 2025 Robert Roffey | All Rights Reserved
-        <br>
-        <a href="https://github.com" class="text-white"><i class="fa-brands fa-github"></i> GitHub</a> |
-        <a href="https://www.codewars.com" class="text-white"><i class="fa-solid fa-code"></i> CodeWars</a> |
-        <a href="contact.html" class="text-white"><i class="fa-solid fa-envelope"></i> Contact</a>
+    <!-- Footer -->
+    <footer class="footer mt-auto py-2 bg-dark text-white text-center">
+        <div class="container">
+            <span>© 2025 Robert Roffey | All Rights Reserved</span>
+            <br>
+            <a href="https://github.com" class="text-white"><i class="fa-brands fa-github"></i> GitHub</a> |
+            <a href="https://www.codewars.com" class="text-white"><i class="fa-solid fa-code"></i> CodeWars</a> |
+            <a href="contact.html" class="text-white"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </div>
     </footer>
 
     <!-- Bootstrap JS -->
@@ -118,6 +76,5 @@
 
     <!-- Custom JS -->
     <script defer src="script.js"></script>
-
 </body>
 </html>
