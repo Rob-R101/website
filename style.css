@@ -120,13 +120,20 @@ html, body {
   padding: 20px;
   width: 100%;
   max-width: 350px;
-  min-height: 250px;
-  height: 250px;
+  min-height: 350px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-card .card-title {
+  margin-bottom: 10px;
 }
 
 .project-card h4,
@@ -153,6 +160,20 @@ html, body {
 
 .project-card a:hover {
   transform: translateY(-3px);
+}
+
+.project-card .btn {
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.project-card .btn:hover {
+  transform: translateY(-2px);
+}
+
+.project-card .mt-auto {
+  margin-top: auto;
 }
 
 /* Certification Box */

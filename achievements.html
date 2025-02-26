@@ -19,62 +19,70 @@
   <!-- Load Navbar -->
   <div id="navbar-container"></div>
 
-  <!-- Main Content Wrapper -->
-  <main class="flex-grow-1 d-flex flex-column">
-    <!-- Hero Section with Consistent Gradient Background -->
-    <section class="hero text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 40vh; max-height: 40vh;">
-      <h1 class="display-4 text-white">My Achievements</h1>
-      <p class="lead text-light">Celebrate what I've accomplished and the journey so far.</p>
-    </section>
 
-    <!-- Achievements Section -->
-    <section class="container d-flex justify-content-center align-items-center flex-grow-1">
-      <div class="row justify-content-center w-100">
-        <!-- CodeWars Stats -->
-        <div class="col-6 col-md-3 mb-3 d-flex justify-content-center">
-          <div class="project-card text-white shadow-sm text-center">
-            <h3 class="card-title"><i class="fa-solid fa-code"></i> CodeWars Stats</h3>
-            <img src="https://www.codewars.com/users/Rob-R101/badges/large"
-                 alt="Codewars Badge" class="img-fluid mb-2">
-            <a href="https://www.codewars.com/users/Rob-R101" target="_blank" class="btn btn-danger mt-2"></i> View Profile
-            </a>
-          </div>
-        </div>
+<!-- Main Content Wrapper -->
+<main class="flex-grow-1">
 
-        <!-- GitHub Stats -->
-        <div class="col-6 col-md-3 mb-3 d-flex justify-content-center">
-          <div class="project-card text-white shadow-sm text-center">
-            <h3 class="card-title"><i class="fa-brands fa-github"></i> GitHub Stats</h3>
-            <img src="https://github-readme-stats.vercel.app/api?username=Rob-R101&show_icons=true&theme=tokyonight"
-                 alt="GitHub Stats" class="img-fluid mb-2">
-            <a href="https://github.com/Rob-R101" target="_blank" class="btn btn-danger mt-2"></i> View Profile
-            </a>
-          </div>
-        </div>
+  <!-- Hero Section with Consistent Gradient Background -->
+  <section class="hero text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 40vh; max-height: 40vh;">
+    <h1 class="display-4 text-white">My Achievements</h1>
+    <p class="lead text-light">Celebrate what I've accomplished and the journey so far.</p>
+  </section>
 
-        <!-- Codecademy Progress -->
-        <div class="col-6 col-md-3 mb-3 d-flex justify-content-center">
-          <div class="project-card text-white shadow-sm text-center">
-            <h3 class="card-title"><i class="fa-solid fa-c"></i> Codecademy Progress</h3>
-            <img src="images/Codecademy stats.png"
-                 alt="Codecademy current progress" class="img-fluid mb-2">
-            <a href="https://www.codecademy.com/" target="_blank" class="btn btn-danger mt-2"></i> Goto Codecademy
-            </a>
-          </div>
-        </div>
-
-        <!-- Certifications Link -->
-        <div class="col-6 col-md-3 mb-3 d-flex justify-content-center">
-          <div class="project-card text-white shadow-sm text-center">
-            <h3 class="card-title"><i class="fa-solid fa-book-open"></i> Certifications</h3>
-            <p>Details of certifications obtained.</p>
-            <a href="certifications.html" class="btn btn-danger"></i> View Certifications
-            </a>
+  <!-- Achievements Section -->
+  <section class="clickable-sections container d-flex justify-content-center align-items-center">
+    <div class="row justify-content-center w-100">
+      <!-- CodeWars Stats -->
+      <div class="col-6 col-md-3 mb-3 d-flex justify-content-center">
+        <div class="project-card text-center text-white shadow-sm d-flex flex-column">
+          <h3 class="card-title"><i class="fa-solid fa-code"></i> CodeWars Stats</h3>
+          <img src="https://www.codewars.com/users/Rob-R101/badges/large"
+               alt="Codewars Badge" class="img-fluid mb-2">
+          <div class="mt-auto">
+            <a href="https://www.codewars.com/users/Rob-R101" target="_blank" class="btn btn-danger w-100">View Profile</a>
           </div>
         </div>
       </div>
-    </section>
-  </main> <!-- End of Main Content -->
+
+      <!-- GitHub Stats -->
+      <div class="col-6 col-md-3 mb-3 d-flex justify-content-center">
+        <div class="project-card text-center text-white shadow-sm d-flex flex-column">
+          <h3 class="card-title"><i class="fa-brands fa-github"></i> GitHub Stats</h3>
+          <img src="https://github-readme-stats.vercel.app/api?username=Rob-R101&show_icons=true&theme=tokyonight"
+               alt="GitHub Stats" class="img-fluid mb-2">
+          <div class="mt-auto">
+            <a href="https://github.com/Rob-R101" target="_blank" class="btn btn-danger w-100">View Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Codecademy Progress -->
+      <div class="col-6 col-md-3 mb-3 d-flex justify-content-center">
+        <div class="project-card text-center text-white shadow-sm d-flex flex-column">
+          <h3 class="card-title"><i class="fa-solid fa-c"></i> Codecademy Progress</h3>
+          <img src="images/Codecademy stats.png"
+               alt="Codecademy current progress" class="img-fluid mb-2">
+          <div class="mt-auto">
+            <a href="https://www.codecademy.com/" target="_blank" class="btn btn-danger w-100">Goto Codecademy</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications Link -->
+      <div class="col-6 col-md-3 mb-3 d-flex justify-content-center">
+        <div class="project-card text-center text-white shadow-sm d-flex flex-column">
+          <h3 class="card-title"><i class="fa-solid fa-book-open"></i> Certifications</h3>
+          <p>Details of certifications obtained.</p>
+          <div class="mt-auto">
+            <a href="certifications.html" class="btn btn-danger w-100">View Certifications</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
 
   <!-- Footer -->
   <footer class="footer mt-auto py-3 bg-dark text-white text-center">
