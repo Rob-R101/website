@@ -1,5 +1,6 @@
 /* Global Styles */
 html, body {
+  font-family: 'Poppins', sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -110,6 +111,7 @@ html, body {
 
 /* Consistent Project Cards */
 .project-card {
+  font-family: 'Poppins', sans-serif;
   background: #1e1e2f;
   color: white;
   border: none;
@@ -150,7 +152,7 @@ html, body {
 }
 
 .project-card img:hover {
-  transform: scale(1.75);
+  transform: scale(3.0);
   z-index: 10;
 }
 
@@ -295,6 +297,7 @@ html, body {
 
 /* Adjustments for Navbar Compatibility */
 .navbar {
+  font-family: 'Poppins', sans-serif;
   position: relative;
 }
 
@@ -302,6 +305,7 @@ html, body {
 .navbar-nav {
   z-index: 2;
   pointer-events: auto;
+  font-weight: 600;
 }
 
 .icon-codecademy {
