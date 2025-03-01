@@ -1,0 +1,17 @@
+# Netlify Configuration File
+
+[build]
+  functions = "netlify/functions"  # Specifies the directory for Netlify Functions
+
+[functions]
+  node_bundler = "esbuild"  # Ensures Node.js functions are bundled properly
+
+[dev]
+  command = "npm run dev"  # (Optional) If using local dev tools
+  functionsPort = 9999      # (Optional) Use this if testing functions locally
+
+[[redirects]]
+  from = "/send_email.php"
+  to = "/.netlify/functions/send_email"
+  status = 301
+  force = true
