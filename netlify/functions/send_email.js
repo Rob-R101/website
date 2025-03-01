@@ -32,11 +32,13 @@ exports.handler = async (event) => {
 
   // Email Content
   let mailOptions = {
-    from: `"${name}" <${email}>`,
+    from: `"Robert Roffey Contact Form" <contact@robertroffey.uk>`, // Use your verified domain email
+    replyTo: email, // Allows you to reply to the sender's email
     to: 'roffeyre@gmail.com',
     subject: `New Contact Form Submission: ${subject}`,
     text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
   };
+
 
   try {
     await transporter.sendMail(mailOptions);
