@@ -26,8 +26,15 @@ document.addEventListener("DOMContentLoaded", function () {
           body: JSON.stringify(formData),
         });
 
-        const result = await response.text();
-        alert(result); // Show success or error message
+        const result = await response.json(); // Parse response as JSON
+
+        if (response.ok) {
+          alert(result.message || "Message sent successfully!"); // Show success message
+          contactForm.reset(); // Reset the form fields
+        } else {
+          alert(result.error || "There was an error sending your message. Please try again.");
+        }
+
       } catch (error) {
         console.error("Error sending message:", error);
         alert("There was an error sending your message. Please try again later.");
