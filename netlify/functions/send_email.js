@@ -84,7 +84,11 @@ exports.handler = async (event) => {
   try {
     let info = await transporter.sendMail(mailOptions);
     console.log("Email sent:", info.response); // Log SMTP response
-    return { statusCode: 200, body: JSON.stringify({ message: 'Message has been sent successfully.', info }) };
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ message: 'Message sent successfully!' })
+    };
+
   } catch (error) {
     console.error("SMTP Error:", error);
     return { statusCode: 500, body: `Message could not be sent. Error: ${error.message}` };
