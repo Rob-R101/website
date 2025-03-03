@@ -315,3 +315,7 @@ html, body {
   vertical-align: middle;
   filter: invert(1);   /* Makes the icon white */
 }
+ /* white C++ logo */
+ .cplusplus-logo {
+  filter: invert(1);
+}
