@@ -71,7 +71,7 @@ html, body {
   gap: 20px;
   padding: 20px;
   overflow-y: auto;
-  max-height: calc(100vh - 200px); /* Adjust for navbar and footer */
+  max-height: calc(100vh - 200px);
 }
 
 /* Clickable Sections - Index Page */
@@ -82,7 +82,7 @@ html, body {
   gap: 20px;
   padding: 20px 0;
   flex-shrink: 0;
-  margin-bottom: 10px;  /* Adds space before the footer */
+  margin-bottom: 10px;
 }
 
 .clickable-sections .project-card {
@@ -144,18 +144,25 @@ html, body {
   font-size: 1.4em;
 }
 
+/* Default image styles (logos + certs) */
 .project-card img {
   max-height: 100px;
   margin-bottom: 15px;
-  transition: transform 0.3s ease;
   border-radius: 5px;
 }
 
-.project-card img:hover {
-  transform: scale(3.0);
-  z-index: 10;
+/* Only certificate images get hover zoom */
+.project-card .certificate-img {
+  transition: transform 0.3s ease;
 }
 
+.project-card .certificate-img:hover {
+  transform: scale(3.0);
+  z-index: 10;
+  position: relative;
+}
+
+/* Links and buttons */
 .project-card a {
   margin: 5px;
   transition: transform 0.3s ease;
@@ -179,7 +186,7 @@ html, body {
   margin-top: auto;
 }
 
-/* Certification Box */
+/* Certification Box (if used elsewhere) */
 .certification-box {
   background: #f8f8f8;
   border: 1px solid #ddd;
@@ -200,6 +207,7 @@ html, body {
 .certification-box:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 
 /* Footer - Fixed at Bottom */
 .footer {
@@ -309,13 +317,17 @@ html, body {
 }
 
 .icon-codecademy {
-  width: 48px;         /* Adjust size to match other icons */
+  width: 48px;
   height: 48px;
-  margin-right: 8px;   /* Space between icon and text */
+  margin-right: 8px;
   vertical-align: middle;
-  filter: invert(1);   /* Makes the icon white */
+  filter: invert(1);
 }
  /* white C++ logo */
  .cplusplus-logo {
   filter: invert(1);
+}
+.cplusplus-logo:hover {
+  transform: scale(1.0);
+  z-index: 10;
 }
